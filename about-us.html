@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="Logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="logo-container">
+        <div class="logo"></div>
+        <div class="logo-name">Wisdom Matric Hr. Sec. School</div>
+      </a>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="links" id="nav-links">
+        <a href="about-us.html" class="link"><b>About Us</b></a>
+        <a href="index.html" class="link">Student Life</a>
+        <a href="facility.html" class="link">Facilities</a>
+        <a href="achievement.html" class="link">Achievements</a>
+        <a href="gallery.html" class="link">Gallery</a>
+        <a href="contact.html" class="link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="about-us-header">
+    <div class="hero-content">
+      <h1 data-aos="fade-up" data-aos-duration="1000">About Us</h1>
+      <p data-aos="fade-up" data-aos-duration="1200">Discover the story behind our success.</p>
+    </div>
+  </header>
+
+  <!-- Main Content Sections -->
+  <main>
+    <!-- Who We Are -->
+    <section id="who-we-are" class="section who-we-are">
+      <div class="content" data-aos="fade-right" data-aos-duration="1000">
+        <h2>Who We Are</h2>
+        <p>We are a leading educational institution dedicated to nurturing future leaders through innovation, excellence, and values.</p>
+      </div>
+      <div class="image" data-aos="fade-left" data-aos-duration="1000">
+        <img src="Group1.jpg" alt="Principal">
+      </div>
+    </section>
+
+    <!-- Management -->
+    <section id="management" class="section management">
+      <div class="image" data-aos="fade-right" data-aos-duration="1000">
+        <img src="Group2.jpg" alt="Correspondent">
+      </div>
+      <div class="content" data-aos="fade-left" data-aos-duration="1000">
+        <h2>Management</h2>
+        <p>Our experienced leadership team is committed to providing the best educational environment for our students.</p>
+      </div>
+    </section>
+
+    <!-- Our Journey -->
+    <section id="journey" class="section journey">
+      <div class="content" data-aos="fade-right" data-aos-duration="1000">
+        <h2>Our Journey</h2>
+        <p>From humble beginnings to becoming a beacon of excellence, our journey is a testament to our dedication and vision.</p>
+      </div>
+      <div class="image" data-aos="fade-left" data-aos-duration="1000">
+        <img src="Group3.jpg" alt="Our Journey">
+      </div>
+    </section>
+  </main>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+      <!-- Column 1: Quick Links -->
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="index.html">Student Life</a></li>
+          <li><a href="facility.html">Facilities</a></li>
+          <li><a href="achievement.html">Achievements</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+  
+      <!-- Column 3: Contact Info -->
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i>  95,
+            Poolampatti Road,
+            Idappadi,<br>&nbsp; Salem - 637101,
+            Tamilnadu, India.</li>
+          <li><i class="fas fa-phone"></i>  98423 86699, 99420 86699, 80720 71115</li>
+          <li><i class="fas fa-envelope"></i> wisdommhss2012@gmail.com</li>
+        </ul>
+      </div>
+  
+      <!-- Column 4: Social Media -->
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Copyright Notice -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 Wisdom Matric Hr. Sec. School. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Toggle mobile menu
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('nav-links');
+    mobileMenu.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Life</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="Logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="logo-container">
+                <div class="logo"></div>
+                <div class="logo-name">Wisdom Matric Hr. Sec. School</div>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="links" id="nav-links">
+                <!-- <a href="#" class="link active">home</a> -->
+                <a href="about-us.html" class="link">About Us</a>
+                <a href="index.html" class="link"><b>Student Life</b></a>
+                <a href="facility.html" class="link">Facilities</a>
+                <a href="achievement.html" class="link">Achievements</a>
+                <a href="gallery.html" class="link">Gallery</a>
+                <a href="contact.html" class="link">
+                contact
+                </a>
+            </div>
+        </div>
+    </nav>
+
+  <header>
+    <div class="hero-content">
+      <h1 data-aos="fade-up" data-aos-duration="1000">Student Life</h1>
+      <p data-aos="fade-up" data-aos-duration="1200">Where Learning Meets Opportunity</p>
+      <a href="#academic" class="btn" data-aos="fade-in" data-aos-duration="1400">Explore More</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="academic" class="section academic">
+      <div class="content" data-aos="fade-right" data-aos-duration="1000">
+        <h2>Academic & Career Development</h2>
+        <p>We provide world-class academic resources and career guidance to help students excel in their studies and future careers.</p>
+      </div>
+      <div class="image" data-aos="fade-left" data-aos-duration="1000">
+        <img src="accademic.jpg" alt="Academic">
+      </div>
+    </section>
+
+    <section id="sustainability" class="section sustainability">
+      <div class="image" data-aos="fade-right" data-aos-duration="1000">
+        <img src="craft.jpg" alt="Sustainability">
+      </div>
+      <div class="content" data-aos="fade-left" data-aos-duration="1000">
+        <h2>Sustainability & Environment</h2>
+        <p>Join us in creating a greener future through eco-friendly initiatives and sustainable practices.</p>
+        
+      </div>
+    </section>
+
+    <section id="sports" class="section sports">
+      <div class="content" data-aos="fade-right" data-aos-duration="1000">
+        <h2>Sports & Wellness</h2>
+        <p>Stay active, healthy, and connected through our sports teams, fitness programs, and wellness resources.</p>
+        
+      </div>
+      <div class="image" data-aos="fade-left" data-aos-duration="1000">
+        <img src="yoga1.jpg" alt="Sports">
+      </div>
+    </section>
+
+    <section id="activities" class="section activities">
+      <div class="image" data-aos="fade-right" data-aos-duration="1000">
+        <img src="Drawing.jpg" alt="Activities">
+      </div>
+      <div class="content" data-aos="fade-left" data-aos-duration="1000">
+        <h2>Extra-curricular Activities</h2>
+        <p>Explore a wide range of clubs, societies, and events to enrich your student experience.</p>
+        
+      </div>
+    </section>
+  </main>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Column 1: Quick Links -->
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="index.html">Student Life</a></li>
+        <li><a href="facility.html">Facilities</a></li>
+        <li><a href="achievement.html">Achievements</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Contact Info -->
+    <div class="footer-column">
+      <h4>Contact Us</h4>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i>  95,
+          Poolampatti Road,
+          Idappadi,<br>&nbsp; Salem - 637101,
+          Tamilnadu, India.</li>
+        <li><i class="fas fa-phone"></i>  98423 86699, 99420 86699, 80720 71115</li>
+        <li><i class="fas fa-envelope"></i> wisdommhss2012@gmail.com</li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Social Media -->
+    <div class="footer-column">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright Notice -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 Wisdom Matric Hr. Sec. School. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  // Toggle mobile menu
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navLinks = document.getElementById('nav-links');
+
+  mobileMenu.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+    navLinks.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

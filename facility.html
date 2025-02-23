@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facilities</title>
+  <link rel="stylesheet" href="facility.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="Logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-wrapper">
+        <a href="#" class="logo-container">
+            <div class="logo"><img src="" alt="" srcset=""></div>
+            <div class="logo-name">Wisdom Matric Hr. Sec. School</div>
+        </a>
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="links" id="nav-links">
+            <!-- <a href="#" class="link active">home</a> -->
+            <a href="about-us.html" class="link">About Us</a>
+            <a href="index.html" class="link">Student Life</a>
+            <a href="facility.html" class="link"><b>Facilities</b></a>
+            <a href="achievement.html" class="link">Achievements</a>
+            <a href="gallery.html" class="link">Gallery</a>
+            <a href="#" class="link">
+            contact
+            </a>
+        </div>
+    </div>
+    </nav>
+  <!-- Facilities Section -->
+  <main>
+    <div class="facilities-container">
+      <button class="scroll-button left" onclick="scrollCards(-1)">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <div class="cards-wrapper">
+        <!-- Transportation -->
+        <div class="facility-card">
+          <div class="card-content">
+            <div class="icon">
+              <i class="fas fa-bus"></i>
+            </div>
+            <h2>Transportation</h2>
+            <p>Safe and reliable transportation services for students, ensuring punctuality and comfort.</p>
+            
+          </div>
+        </div>
+
+        <!-- Library -->
+        <div class="facility-card">
+          <div class="card-content">
+            <div class="icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <h2>Library</h2>
+            <p>A vast collection of books, journals, and digital resources to support academic excellence.</p>
+            
+          </div>
+        </div>
+
+        <!-- Digital Learning & Smart Classrooms -->
+        <div class="facility-card">
+          <div class="card-content">
+            <div class="icon">
+              <i class="fas fa-laptop"></i>
+            </div>
+            <h2>Smart Classrooms</h2>
+            <p>State-of-the-art technology to enhance learning through interactive and engaging methods.</p>
+            
+          </div>
+        </div>
+
+        <!-- Sports -->
+        <div class="facility-card">
+          <div class="card-content">
+            <div class="icon">
+              <i class="fas fa-running"></i>
+            </div>
+            <h2>Sports</h2>
+            <p>World-class sports facilities to promote physical fitness and teamwork among students.</p>
+            
+          </div>
+        </div>
+
+        <!-- Labs -->
+        <div class="facility-card">
+          <div class="card-content">
+            <div class="icon">
+              <i class="fas fa-flask"></i>
+            </div>
+            <h2>Labs</h2>
+            <p>Fully equipped labs for science, technology, and innovation to foster hands-on learning.</p>
+        
+          </div>
+        </div>
+      </div>
+      <button class="scroll-button right" onclick="scrollCards(1)">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Column 1: Quick Links -->
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="index.html">Student Life</a></li>
+        <li><a href="facility.html">Facilities</a></li>
+        <li><a href="achievement.html">Achievements</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Contact Info -->
+    <div class="footer-column">
+      <h4>Contact Us</h4>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i>  95,
+          Poolampatti Road,
+          Idappadi,<br>&nbsp; Salem - 637101,
+          Tamilnadu, India.</li>
+        <li><i class="fas fa-phone"></i>  98423 86699, 99420 86699, 80720 71115</li>
+        <li><i class="fas fa-envelope"></i> wisdommhss2012@gmail.com</li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Social Media -->
+    <div class="footer-column">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright Notice -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 Wisdom Matric Hr. Sec. School. All Rights Reserved.</p>
+  </div>
+</footer>
+
+  <!-- Scripts -->
+  <script>
+    // Function to scroll cards
+    function scrollCards(direction) {
+      const cardsWrapper = document.querySelector('.cards-wrapper');
+      const cardWidth = document.querySelector('.facility-card').offsetWidth + 20; // Card width + gap
+      const scrollAmount = cardWidth * direction;
+
+      // Scroll the cards
+      cardsWrapper.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+        // Toggle mobile menu
+        const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('nav-links');
+
+    mobileMenu.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

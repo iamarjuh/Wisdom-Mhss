@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Navigation Bar (Same as other pages) */
+  nav {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+  }
+  
+  /* Gallery Container */
+  .gallery-container {
+    padding: 50px 10%;
+    text-align: center;
+  }
+  
+  .gallery-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #144272;
+  }
+  
+  .gallery-container p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: #555;
+  }
+  
+  /* Gallery Grid */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    padding: 20px;
+  }
+  
+  /* Gallery Card */
+  .gallery-card {
+    background: white;
+    border-radius: 15px;
+    overflow: visible; /* Allow images to overflow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .gallery-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Stacked Images */
+  .image-stack {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjust based on your card height */
+    perspective: 1000px; /* Adds depth for 3D effect */
+    overflow: visible; /* Allow images to overflow */
+  }
+  
+  .stacked-image {
+    position: absolute;
+    width: 100%; /* Ensure images fill the card width */
+    height: 100%; /* Ensure images fill the card height */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, z-index 0.3s ease;
+  }
+  
+  /* Position and rotate the stacked images */
+  .image-1 {
+    top: -20px; /* Move image outside the container */
+    left: -20px; /* Move image outside the container */
+    transform: rotate(-5deg); /* Slight rotation */
+    z-index: 3;
+  }
+  
+  .image-2 {
+    top: -10px; /* Move image outside the container */
+    left: -10px; /* Move image outside the container */
+    transform: rotate(0deg);
+    z-index: 2;
+  }
+  
+  .image-3 {
+    top: 0;
+    left: 0;
+    transform: rotate(5deg); /* Slight rotation */
+    z-index: 1;
+  }
+  
+  /* Hover Effect */
+  .gallery-card:hover .image-1 {
+    transform: rotate(-5deg) translateY(-20px); /* Move up slightly */
+    z-index: 4;
+  }
+  
+  .gallery-card:hover .image-2 {
+    transform: rotate(0deg) translateY(-10px); /* Move up slightly */
+    z-index: 3;
+  }
+  
+  .gallery-card:hover .image-3 {
+    transform: rotate(5deg) translateY(0); /* Stay in place */
+    z-index: 2;
+  }
+  
+  /* Card Content */
+  .gallery-card .card-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .gallery-card .card-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #144272;
+  }
+  
+  .gallery-card .card-content p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  
+    .gallery-card .card-image {
+      height: 150px;
+    }
+  }
