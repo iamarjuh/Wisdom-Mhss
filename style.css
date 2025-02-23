@@ -47,7 +47,8 @@ body {
     background-image: url("Logo.jpg");
   }
   
-  .logo-name {
+  .logo-name {    
+    font-family: "Montserrat", "poppins";
     font-size: 1.7rem;
     text-transform: capitalize;
     font-weight: 600;
